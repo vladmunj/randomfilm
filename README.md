@@ -6,7 +6,8 @@
     Команды для инициализации базы данных: 
     1. php artisan migrate 
     2. php artisan movies:init 
-    3.php artisan movies:source
+    3. php artisan movies:source
+    4. php artisan queue:w
     
 Системные требования:
 - Apache 2.4 +
