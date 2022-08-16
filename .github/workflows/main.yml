@@ -22,3 +22,11 @@ jobs:
         host: vladmua2.beget.tech
         username: vladmua2_ftp
         password: ${{ secrets.ftp_password }}
+        
+    - name: Migrate database
+      uses: garygrossgarten/github-action-ssh@release
+      with:
+        command: php artisan migrate
+        host: vladmua2.beget.tech
+        username: vladmua2_ftp
+        password: ${{ secrets.ftp_password }}
