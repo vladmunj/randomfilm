@@ -15,10 +15,10 @@ jobs:
         username: vladmua2_ftp
         password: ${{ secrets.ftp_password }}
 
-    - name: php -v
+    - name: ls -a
       uses: garygrossgarten/github-action-ssh@release
       with:
-        command: php -v
+        command: ls -a
         host: vladmua2.beget.tech
         username: vladmua2_ftp
         password: ${{ secrets.ftp_password }}
