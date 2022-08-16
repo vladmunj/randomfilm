@@ -15,10 +15,10 @@ jobs:
         username: vladmua2_ftp
         password: ${{ secrets.ftp_password }}
 
-    - name: ls -a
+    - name: Clear cache
       uses: garygrossgarten/github-action-ssh@release
       with:
-        command: ls -a
+        command: php artisan cache:clear
         host: vladmua2.beget.tech
         username: vladmua2_ftp
         password: ${{ secrets.ftp_password }}
